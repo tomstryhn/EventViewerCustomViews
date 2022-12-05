@@ -1,0 +1,21 @@
+<ViewerConfig>
+    <QueryConfig>
+        <QueryParams>
+            <UserQuery />
+        </QueryParams>
+        <QueryNode>
+            <Name>Legacy Kerberos Ticket Encryption Types</Name>
+            <Description>Legacy Kerberos Ticket Encryption Types: DES-CBC-CRC, DES-CBC-MD5, RC4-HMAC, RC4-HMAC-EXP</Description>
+            <QueryList>
+                <Query Id="0" Path="Security">
+                    <Select Path="Security">
+                        *[System[Provider[@Name='Microsoft-Windows-Security-Auditing'] and (EventID=4768)]] and
+                        *[EventData[Data[@Name="TicketEncryptionType"]!="0x11"]] and
+                        *[EventData[Data[@Name="TicketEncryptionType"]!="0x12"]] and
+                        *[EventData[Data[@Name="TicketEncryptionType"]!="0xffffffff"]]
+                    </Select>
+                </Query>
+            </QueryList>
+        </QueryNode>
+    </QueryConfig>
+</ViewerConfig>

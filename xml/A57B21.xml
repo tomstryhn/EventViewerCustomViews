@@ -1,0 +1,16 @@
+<ViewerConfig>
+    <QueryConfig>
+        <QueryParams>
+            <UserQuery />
+        </QueryParams>
+        <QueryNode>
+            <Name>Service Creation Error</Name>
+            <Description>Service Creation Errors</Description>
+            <QueryList>
+                <Query Id="0" Path="System">
+                    <Select Path="System">*[System[(EventID=7030)]]</Select>
+                </Query>
+            </QueryList>
+        </QueryNode>
+    </QueryConfig>
+</ViewerConfig>

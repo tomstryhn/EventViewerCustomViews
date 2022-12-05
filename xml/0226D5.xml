@@ -1,0 +1,20 @@
+﻿<ViewerConfig>
+    <QueryConfig>
+        <QueryParams>
+            <UserQuery />
+        </QueryParams>
+        <QueryNode>
+            <Name>NTLMv1 Authentications</Name>
+            <Description>NTLMv1 (Windows New Technology LAN Manager) Authentications</Description>
+            <QueryList>
+                <Query Id="0" Path="Security">
+                    <Select Path="Security">
+                        *[System[Provider[@Name='Microsoft-Windows-Security-Auditing'] and (EventID=4624)]] and
+                        *[EventData[Data[@Name="TargetUserName"]!="ANONYMOUS LOGON"]] and
+                        *[EventData[Data[@Name="LmPackageName"]="NTLM V1"]]
+                    </Select>
+                </Query>
+            </QueryList>
+        </QueryNode>
+    </QueryConfig>
+</ViewerConfig>

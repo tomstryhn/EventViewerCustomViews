@@ -1,0 +1,16 @@
+<ViewerConfig>
+    <QueryConfig>
+        <QueryParams>
+            <UserQuery />
+        </QueryParams>
+        <QueryNode>
+            <Name>User Creation</Name>
+            <Description>User Creation</Description>
+            <QueryList>
+                <Query Id="0" Path="Security">
+                    <Select Path="Security">*[System[Provider[@Name='Microsoft-Windows-Security-Auditing'] and (EventID=4720)]]</Select>
+                </Query>
+            </QueryList>
+        </QueryNode>
+    </QueryConfig>
+</ViewerConfig>

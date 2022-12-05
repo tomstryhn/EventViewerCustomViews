@@ -1,0 +1,18 @@
+<ViewerConfig>
+    <QueryConfig>
+        <QueryParams>
+            <UserQuery />
+        </QueryParams>
+        <QueryNode>
+            <Name>Account Authentication</Name>
+            <Description>Successfull and Failed Account Authentication</Description>
+            <QueryList>
+                <Query Id="0" Path="Security">
+                    <Select Path="Security">
+                        *[System[Provider[@Name='Microsoft-Windows-Security-Auditing'] and (EventID=4776)]]
+                    </Select>
+                </Query>
+            </QueryList>
+        </QueryNode>
+    </QueryConfig>
+</ViewerConfig>

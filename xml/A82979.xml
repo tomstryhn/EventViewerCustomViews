@@ -1,0 +1,16 @@
+<ViewerConfig>
+    <QueryConfig>
+        <QueryParams>
+            <UserQuery />
+        </QueryParams>
+        <QueryNode>
+            <Name>Service Creation</Name>
+            <Description>Service Creation</Description>
+            <QueryList>
+                <Query Id="0" Path="System">
+                    <Select Path="System">*[System[(EventID=7045)]]</Select>
+                </Query>
+            </QueryList>
+        </QueryNode>
+    </QueryConfig>
+</ViewerConfig>

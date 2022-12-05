@@ -1,0 +1,19 @@
+<ViewerConfig>
+    <QueryConfig>
+        <QueryParams>
+            <UserQuery />
+        </QueryParams>
+        <QueryNode>
+            <Name>Administrator Logon (Successful)</Name>
+            <Description>Successful Administrator Account Logons</Description>
+            <QueryList>
+                <Query Id="0" Path="Security">
+                    <Select Path="Security">
+                        *[System[Provider[@Name='Microsoft-Windows-Security-Auditing'] and (EventID=4624)]] and
+                        *[EventData[Data[@Name="TargetUserName"]="Administrator"]]
+                    </Select>
+                </Query>
+            </QueryList>
+        </QueryNode>
+    </QueryConfig>
+</ViewerConfig>

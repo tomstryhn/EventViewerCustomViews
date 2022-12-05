@@ -1,0 +1,16 @@
+<ViewerConfig>
+    <QueryConfig>
+        <QueryParams>
+            <UserQuery />
+        </QueryParams>
+        <QueryNode>
+            <Name>Security Group Membership</Name>
+            <Description>Member added to Security Group (Global Group)</Description>
+            <QueryList>
+                <Query Id="0" Path="Security">
+                    <Select Path="Security">*[System[Provider[@Name='Microsoft-Windows-Security-Auditing'] and Task = 13826 and (EventID=4728)]]</Select>
+                </Query>
+            </QueryList>
+        </QueryNode>
+    </QueryConfig>
+</ViewerConfig>

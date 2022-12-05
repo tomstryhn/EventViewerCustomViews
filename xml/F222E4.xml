@@ -1,0 +1,18 @@
+<ViewerConfig>
+    <QueryConfig>
+        <QueryParams>
+            <UserQuery />
+        </QueryParams>
+        <QueryNode>
+            <Name>Logon (Failed)</Name>
+            <Description>Failed Account Logons</Description>
+            <QueryList>
+                <Query Id="0" Path="Security">
+                    <Select Path="Security">
+                        *[System[Provider[@Name='Microsoft-Windows-Security-Auditing'] and (EventID=4625)]]
+                    </Select>
+                </Query>
+            </QueryList>
+        </QueryNode>
+    </QueryConfig>
+</ViewerConfig>
