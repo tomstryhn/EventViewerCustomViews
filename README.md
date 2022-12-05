@@ -28,7 +28,7 @@ Find the Custom View in the list, download it to the computer, or copy the conte
 
 ## Custom Views
 #### Account Authentication
-   - Successfull and Failed Account Authentication <br />
+   - Successful and Failed Account Authentication <br />
       - XMLFile: [00D111.xml](./xml/00D111.xml)
 #### Administrator Logon (Failed)
    - Failed Administrator Account Logons <br />
