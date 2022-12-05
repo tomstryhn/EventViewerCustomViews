@@ -5,7 +5,7 @@
         </QueryParams>
         <QueryNode>
             <Name>Account Authentication</Name>
-            <Description>Successfull and Failed Account Authentication</Description>
+            <Description>Successful and Failed Account Authentication</Description>
             <QueryList>
                 <Query Id="0" Path="Security">
                     <Select Path="Security">
