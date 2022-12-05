@@ -26,6 +26,8 @@ I often find myself using the Microsoft Event Viewer when gathering information 
 ## How to Use
 Find the Custom View in the list, download it to the computer, or copy the content to Notepad and save the file as an ```.xml```, then open *Event Viewer*, right click on the *Custom Views* in the top left pane, and select *Import Custom View...*
 
+Can also be used with the [EventFromCustomView PowerShell Module](https://github.com/tomstryhn/EventFromCustomView)
+
 ## Custom Views
 #### Account Authentication
    - Successful and Failed Account Authentication <br />
